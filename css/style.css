@@ -35,6 +35,17 @@ div.India-Flag {
   );
 }
 
+div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 80px 200px;
+}
+
+div.India-Flag::before {
+  content: "India Flag";
+}
+
 div.Benin-Flag {
   width: 500px;
   height: 400px;
@@ -54,13 +65,34 @@ div.Benin-Flag::before {
   background: linear-gradient(to top, #ffdf0c 0 50%, #ff001c 0 50%);
 }
 
-div img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  padding: 80px 200px;
+div.Buddhism-Flag {
+  width: 600px;
+  height: 500px;
+  border: 1px solid gainsboro;
+  background: linear-gradient(
+    to right,
+    #0000f7 0 15%,
+    #f7f700 15% 30%,
+    #f70000 30% 45%,
+    #f2f0f5 45% 60%,
+    #f79300 60% 85%
+  );
 }
 
-div.India-Flag::before {
-  content: "India Flag";
+.inner-ox-buddhism-flag {
+  width: 150px;
+  height: 500px;
+  float: right;
+  background: linear-gradient(
+    to top,
+    #f79300 0 20%,
+    #f2f0f5 20% 40%,
+    #f70000 40% 60%,
+    #f7f700 60% 80%,
+    #0000f7 80% 100%
+  );
+}
+
+div.Buddhism-Flag::before {
+  content: "Buddhism Flag";
 }
